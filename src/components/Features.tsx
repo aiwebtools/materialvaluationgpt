@@ -1,6 +1,6 @@
 
 import React, { useRef, useEffect } from 'react';
-import { DollarSign, Database, Globe, Network, Cpu, Code, BarChart4 } from 'lucide-react';
+import { DollarSign, Database, Globe, Network, Cpu, Code, BarChart4, Shield } from 'lucide-react';
 
 const Features: React.FC = () => {
   const featuresRef = useRef<HTMLDivElement>(null);
@@ -60,9 +60,9 @@ const Features: React.FC = () => {
       color: "yellow"
     },
     {
-      icon: <Database className="w-6 h-6 text-neon-green" />,
-      title: "Comprehensive Database",
-      description: "Extensive knowledge of materials, their properties, and historical price trends to inform valuations.",
+      icon: <Shield className="w-6 h-6 text-neon-green" />,
+      title: "Privacy-Focused",
+      description: "No data storage of your materials or valuations - all analysis happens in real-time during your session.",
       color: "green"
     },
     {

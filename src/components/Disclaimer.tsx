@@ -50,6 +50,10 @@ const Disclaimer: React.FC = () => {
               </p>
               
               <p>
+                <strong className="text-white">No Data Storage:</strong> Materiumor does not store any user data, material information, or valuation history. All analyses are performed in real-time during your session without persistent storage of your material details or appraisals.
+              </p>
+              
+              <p>
                 <strong className="text-white">No Guarantee of Accuracy:</strong> While we strive to provide accurate and up-to-date information, AI Web Tools LLC makes no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability of Materiumor or the information it generates. Market conditions for materials, precious metals, gemstones, and digital currencies are subject to rapid fluctuations.
               </p>
               

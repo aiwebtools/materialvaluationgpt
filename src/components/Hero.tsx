@@ -63,7 +63,7 @@ const Hero: React.FC = () => {
                 <DollarSign className="w-6 h-6 text-neon-cyan" />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-white">Precise Valuations</h3>
-              <p className="text-white/70">Accurate grading and market value calculations for any material or item.</p>
+              <p className="text-white/70">Real-time AI analysis for accurate material value assessment with no data storage.</p>
             </div>
             
             {/* Card 2 */}
@@ -72,7 +72,7 @@ const Hero: React.FC = () => {
                 <Globe className="w-6 h-6 text-neon-magenta" />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-white">Global Markets</h3>
-              <p className="text-white/70">Real-time data from commodity and financial markets worldwide.</p>
+              <p className="text-white/70">Access to real-time market data from worldwide financial markets during your session.</p>
             </div>
             
             {/* Card 3 */}
@@ -80,8 +80,8 @@ const Hero: React.FC = () => {
               <div className="w-12 h-12 flex items-center justify-center rounded-full bg-neon-blue/10 border border-neon-blue/30 mb-4 mx-auto">
                 <Database className="w-6 h-6 text-neon-blue" />
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-white">Comprehensive Analysis</h3>
-              <p className="text-white/70">Deep insights into materials from precious metals to digital currencies.</p>
+              <h3 className="text-xl font-semibold mb-2 text-white">Private Analysis</h3>
+              <p className="text-white/70">Secure, session-based valuation with no user data or appraisal history stored.</p>
             </div>
           </div>
         </div>

@@ -21,7 +21,7 @@ const CTA: React.FC = () => {
           </h2>
           
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Don't navigate uncertain markets alone. Get precise valuations for your materials with our AI-powered technology.
+            Don't navigate uncertain markets alone. Get precise, private valuations for your materials with our AI-powered technology.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

@@ -70,15 +70,19 @@ const FAQ: React.FC = () => {
   const faqItems = [
     {
       question: "What is Materiumor?",
-      answer: "Materiumor is an advanced AI-powered tool designed to provide accurate valuations and grades for various materials, including raw materials, precious metals, gemstones, and digital currencies. It uses GPT4o technology to analyze material properties and current market data to deliver precise valuations."
+      answer: "Materiumor is an advanced AI-powered tool designed to provide accurate valuations and grades for various materials, including raw materials, precious metals, gemstones, and digital currencies. It uses GPT4o technology to analyze material properties and current market data to deliver precise valuations in real-time."
     },
     {
       question: "How accurate are the valuations?",
-      answer: "Materiumor provides highly accurate valuations based on real-time market data, historical trends, and material-specific grading criteria. However, for high-value transactions or legal purposes, we recommend verifying with a certified appraiser. Our AI continuously improves its accuracy through machine learning."
+      answer: "Materiumor provides highly accurate valuations based on real-time market data, historical trends, and material-specific grading criteria. However, for high-value transactions or legal purposes, we recommend verifying with a certified appraiser. The AI analyzes current data for each new valuation request."
     },
     {
       question: "What types of materials can Materiumor evaluate?",
-      answer: "Materiumor can evaluate a wide range of materials including precious metals (gold, silver, platinum), gemstones, raw materials (lithium, quartz, etc.), collectibles, and digital currencies. The AI is designed to adapt its valuation methods to the specific characteristics of each material type."
+      answer: "Materiumor can evaluate a wide range of materials including precious metals (gold, silver, platinum), gemstones, raw materials (lithium, quartz, etc.), collectibles, and digital currencies. The AI adapts its valuation methods to the specific characteristics of each material type."
+    },
+    {
+      question: "Does Materiumor store my material information or valuations?",
+      answer: "No, Materiumor does not store any user data, material information, or valuation history. All analyses are performed in real-time during your session, and no information about your materials or the valuations provided is retained after your session ends."
     },
     {
       question: "How does the grading system work?",
@@ -87,10 +91,6 @@ const FAQ: React.FC = () => {
     {
       question: "Can I use Materiumor for insurance purposes?",
       answer: "While Materiumor provides detailed valuations based on current market data, insurance companies may require certification from licensed appraisers. Our valuations can serve as preliminary assessments, but we recommend consulting with your insurance provider about their specific requirements."
-    },
-    {
-      question: "Is my material information kept confidential?",
-      answer: "Yes, we take data privacy seriously. Information about your materials is processed securely and is not shared with third parties. Our systems comply with industry-standard security protocols to ensure your valuable asset information remains protected."
     }
   ];
 
