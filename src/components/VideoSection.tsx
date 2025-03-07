@@ -36,13 +36,6 @@ const VideoSection: React.FC = () => {
       
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-10 fade-in-section">
-            <h2 className="section-title">See Materiumor in Action</h2>
-            <p className="text-lg text-white/70 max-w-2xl mx-auto">
-              Watch how our AI provides material valuations and insights to help you make informed decisions. Remember that results are for research purposes only.
-            </p>
-          </div>
-          
           <div className="fade-in-section">
             <div className="relative rounded-xl overflow-hidden neo-card" style={{ paddingBottom: '56.25%' }}>
               <iframe 
