@@ -39,7 +39,7 @@ const Index: React.FC = () => {
   }, []);
 
   return (
-    <div className="bg-dark min-h-screen">
+    <div className="bg-dark min-h-screen overflow-x-hidden">
       <AnimatedBackground />
       <Header />
       <main>
