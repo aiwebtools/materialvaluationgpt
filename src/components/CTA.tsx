@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { DollarSign } from 'lucide-react';
+import { DollarSign, AlertTriangle } from 'lucide-react';
 
 const CTA: React.FC = () => {
   return (
@@ -20,9 +20,16 @@ const CTA: React.FC = () => {
             <span className="neon-text-cyan">Secure Your Material's</span> <span className="neon-text-magenta">True Value</span>
           </h2>
           
-          <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-white/80 mb-4 max-w-2xl mx-auto">
             Don't navigate uncertain markets alone. Get precise, private valuations for your materials with our AI-powered technology.
           </p>
+          
+          <div className="flex items-center justify-center gap-2 mb-8 p-3 border border-yellow-500/30 bg-yellow-500/10 rounded-md max-w-3xl mx-auto">
+            <AlertTriangle className="w-5 h-5 text-yellow-500 flex-shrink-0" />
+            <p className="text-sm text-yellow-500">
+              <strong>Important:</strong> This tool is for informational and research purposes only. AI may provide inaccurate responses. Always verify material valuations with qualified experts.
+            </p>
+          </div>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a 

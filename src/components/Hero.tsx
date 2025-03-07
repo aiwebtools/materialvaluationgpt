@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { DollarSign, Globe, Database } from 'lucide-react';
+import { DollarSign, Globe, Database, AlertTriangle } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
@@ -32,6 +32,14 @@ const Hero: React.FC = () => {
           <p className="text-xl md:text-2xl text-white/80 mb-8 leading-relaxed max-w-3xl animate-slide-up">
             Your AI "World Trade Center" for All Goods and Materials - Creating a true value system for anything in an uncertain world.
           </p>
+          
+          {/* Disclaimer Notice */}
+          <div className="flex items-center gap-2 mb-6 p-3 border border-yellow-500/30 bg-yellow-500/10 rounded-md max-w-3xl animate-slide-up">
+            <AlertTriangle className="w-5 h-5 text-yellow-500 flex-shrink-0" />
+            <p className="text-sm text-yellow-500">
+              <strong>For Informational & Research Purposes Only:</strong> AI responses may be inaccurate. Always verify material valuations with professional experts before making financial decisions.
+            </p>
+          </div>
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-slide-up">
