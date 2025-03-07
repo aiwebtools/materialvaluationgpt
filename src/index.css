@@ -1,101 +1,187 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 240 14% 4%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 240 10% 7%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 240 10% 7%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 186 100% 44%;
+    --primary-foreground: 240 10% 3.9%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 324 90% 56%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 240 5% 15%;
+    --muted-foreground: 240 5% 70%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 240 5% 15%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 240 5% 15%;
+    --input: 240 5% 15%;
+    --ring: 186 100% 44%;
 
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --radius: 0.75rem;
   }
 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-}
-
-@layer base {
   * {
     @apply border-border;
   }
 
-  body {
-    @apply bg-background text-foreground;
+  html {
+    scroll-behavior: smooth;
   }
+
+  body {
+    @apply bg-dark text-foreground font-sans antialiased overflow-x-hidden;
+  }
+
+  /* Scroll-bar styling */
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-dark;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-md border border-white/10 rounded-2xl shadow-glass;
+  }
+  
+  .glass-panel {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-xl;
+  }
+  
+  .neon-text-cyan {
+    @apply text-neon-cyan drop-shadow-[0_0_8px_rgba(10,255,233,0.7)];
+  }
+  
+  .neon-text-magenta {
+    @apply text-neon-magenta drop-shadow-[0_0_8px_rgba(255,44,223,0.7)];
+  }
+  
+  .neon-text-blue {
+    @apply text-neon-blue drop-shadow-[0_0_8px_rgba(46,119,245,0.7)];
+  }
+  
+  .neon-border {
+    @apply border border-neon-cyan/50 shadow-neon-glow;
+  }
+  
+  .btn-primary {
+    @apply py-3 px-6 bg-neon-cyan/10 hover:bg-neon-cyan/20 text-neon-cyan border border-neon-cyan/50 
+    rounded-full font-medium transition-all duration-300 shadow-sm hover:shadow-neon-glow;
+  }
+  
+  .btn-secondary {
+    @apply py-3 px-6 bg-neon-magenta/10 hover:bg-neon-magenta/20 text-neon-magenta border border-neon-magenta/50 
+    rounded-full font-medium transition-all duration-300 shadow-sm hover:shadow-neon-magenta;
+  }
+  
+  .btn-tertiary {
+    @apply py-3 px-6 bg-neon-blue/10 hover:bg-neon-blue/20 text-neon-blue border border-neon-blue/50 
+    rounded-full font-medium transition-all duration-300 shadow-sm hover:shadow-neon-blue;
+  }
+  
+  .section {
+    @apply py-16 md:py-24 px-4 w-full;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-6 neon-text-cyan;
+  }
+  
+  .section-subtitle {
+    @apply text-xl md:text-2xl font-medium mb-4 text-white/80;
+  }
+  
+  .highlight {
+    @apply relative inline-block;
+  }
+  
+  .highlight::after {
+    @apply content-[''] absolute w-full h-1/2 bottom-0 left-0 bg-neon-cyan/20 -z-10 rounded-sm;
+  }
+}
+
+/* Cyberpunk Grid Background */
+.cyberpunk-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(30, 30, 50, 0.3) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(30, 30, 50, 0.3) 1px, transparent 1px);
+}
+
+/* Scanning Line Effect */
+.scan-line {
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, 
+    transparent, 
+    rgba(10, 255, 233, 0.5), 
+    rgba(10, 255, 233, 0.8), 
+    rgba(10, 255, 233, 0.5), 
+    transparent
+  );
+  position: absolute;
+  left: 0;
+  z-index: 10;
+}
+
+/* Neuomorphic effect for cards */
+.neo-card {
+  background: linear-gradient(145deg, rgba(18, 18, 36, 0.6), rgba(14, 14, 18, 0.6));
+  box-shadow: 
+    5px 5px 10px rgba(0, 0, 0, 0.4),
+    -5px -5px 10px rgba(40, 40, 80, 0.1);
+}
+
+/* Fade In Animation for Sections */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover Effects */
+.hover-scale {
+  transition: transform 0.3s ease-out;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 15px rgba(10, 255, 233, 0.5);
 }
