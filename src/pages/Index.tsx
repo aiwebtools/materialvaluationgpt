@@ -11,6 +11,7 @@ import Disclaimer from '@/components/Disclaimer';
 import CTA from '@/components/CTA';
 import Footer from '@/components/Footer';
 import AnimatedBackground from '@/components/AnimatedBackground';
+import DisclaimerPopup from '@/components/DisclaimerPopup';
 
 const Index: React.FC = () => {
   useEffect(() => {
@@ -41,6 +42,7 @@ const Index: React.FC = () => {
   return (
     <div className="bg-dark min-h-screen overflow-x-hidden">
       <AnimatedBackground />
+      <DisclaimerPopup />
       <Header />
       <main>
         <Hero />
