@@ -56,10 +56,12 @@ const Header: React.FC = () => {
             Also Try Antique & Sports Collectible Appraisal GPT
           </a>
           <a 
-            href="#faq" 
+            href="https://docs.google.com/document/d/e/2PACX-1vRCroJHvrdJpxXv6u72FOMtj5ttNzmohJ0UDIF-80WUxY8sxxEn8sJf_ChTtYz5VoVTIbVzF1tJTqun/pub" 
+            target="_blank" 
+            rel="noopener noreferrer"
             className="text-white/80 hover:text-neon-cyan transition-colors"
           >
-            FAQ
+            OPEN SOURCE PROMPT
           </a>
           <a 
             href="#disclaimer" 
@@ -115,11 +117,13 @@ const Header: React.FC = () => {
             Also Try Antique & Sports Collectible Appraisal GPT
           </a>
           <a 
-            href="#faq" 
+            href="https://docs.google.com/document/d/e/2PACX-1vRCroJHvrdJpxXv6u72FOMtj5ttNzmohJ0UDIF-80WUxY8sxxEn8sJf_ChTtYz5VoVTIbVzF1tJTqun/pub" 
+            target="_blank" 
+            rel="noopener noreferrer"
             className="py-2 text-white/80 hover:text-neon-cyan transition-colors"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            FAQ
+            OPEN SOURCE PROMPT
           </a>
           <a 
             href="#disclaimer" 
