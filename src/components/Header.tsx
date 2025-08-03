@@ -64,6 +64,14 @@ const Header: React.FC = () => {
             OPEN SOURCE PROMPT
           </a>
           <a 
+            href="https://freename.com/result/?search=.worldtrade&type=WEB3_SLD" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-white/80 hover:text-neon-cyan transition-colors"
+          >
+            SECURE YOUR .WORLDTRADE WEB3 DOMAIN
+          </a>
+          <a 
             href="#disclaimer" 
             className="text-white/80 hover:text-neon-cyan transition-colors"
           >
@@ -124,6 +132,15 @@ const Header: React.FC = () => {
             onClick={() => setIsMobileMenuOpen(false)}
           >
             OPEN SOURCE PROMPT
+          </a>
+          <a 
+            href="https://freename.com/result/?search=.worldtrade&type=WEB3_SLD" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="py-2 text-white/80 hover:text-neon-cyan transition-colors"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            SECURE YOUR .WORLDTRADE WEB3 DOMAIN
           </a>
           <a 
             href="#disclaimer" 
