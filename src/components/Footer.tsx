@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
               </div>
               <div>
                 <h1 className="text-xl font-bold tracking-tight group-hover:text-neon-cyan transition-colors duration-300">Materiumor</h1>
-                <p className="text-xs text-muted-foreground">Presented by <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="hover:text-neon-cyan transition-colors">AiWebTools.Ai</a></p>
+                <p className="text-xs text-muted-foreground">Presented by <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="hover:text-neon-cyan transition-colors">AiWebTools.Ai</a></p>
               </div>
             </a>
             <p className="text-white/60 text-sm mb-6">
@@ -83,7 +83,7 @@ const Footer: React.FC = () => {
                 Disclaimer
               </a>
               <a 
-                href="https://www.aiwebtools.ai" 
+                href="https://aiwebtools.lovable.app/?via=aiwebtools" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-white/70 hover:text-neon-cyan transition-colors"
@@ -106,7 +106,7 @@ const Footer: React.FC = () => {
                 Privacy Policy
               </a>
               <a 
-                href="https://aiwebtools.ai/terms-of-services" 
+                href="https://aiwebtools.lovable.app/terms-of-services?via=aiwebtools" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-white/70 hover:text-neon-cyan transition-colors"
@@ -129,7 +129,7 @@ const Footer: React.FC = () => {
               Explore our full suite of AI-powered tools designed to help you make better decisions.
             </p>
             <a 
-              href="https://www.aiwebtools.ai" 
+              href="https://aiwebtools.lovable.app/?via=aiwebtools" 
               target="_blank" 
               rel="noopener noreferrer"
               className="btn-primary inline-flex items-center justify-center rounded-full"
@@ -141,7 +141,7 @@ const Footer: React.FC = () => {
         
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/60 text-sm mb-4 md:mb-0">
-            © 2025 <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="hover:text-neon-cyan transition-colors">AI WEB TOOLS LLC</a> All rights reserved.
+            © 2025 <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="hover:text-neon-cyan transition-colors">AI WEB TOOLS LLC</a> All rights reserved.
           </p>
           <p className="text-white/60 text-sm">
             "Illuminating material value in a complex world"

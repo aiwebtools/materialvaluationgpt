@@ -33,7 +33,7 @@ const Header: React.FC = () => {
           </div>
           <div>
             <h1 className="text-xl font-bold tracking-tight group-hover:text-neon-cyan transition-colors duration-300">Materiumor</h1>
-            <p className="text-xs text-muted-foreground">Presented by <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="hover:text-neon-cyan transition-colors">AiWebTools.Ai</a></p>
+            <p className="text-xs text-muted-foreground">Presented by <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="hover:text-neon-cyan transition-colors">AiWebTools.Ai</a></p>
           </div>
         </a>
 
@@ -78,7 +78,7 @@ const Header: React.FC = () => {
             Disclaimer
           </a>
           <a 
-            href="https://www.aiwebtools.ai" 
+            href="https://aiwebtools.lovable.app/?via=aiwebtools" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-white/80 hover:text-neon-cyan transition-colors"
@@ -97,20 +97,30 @@ const Header: React.FC = () => {
         </button>
       </div>
 
+      {/* Mobile Menu Overlay */}
+      {isMobileMenuOpen && (
+        <div 
+          className="fixed inset-0 bg-black/40 z-[-1] md:hidden"
+          onClick={() => setIsMobileMenuOpen(false)}
+        />
+      )}
+
       {/* Mobile Menu */}
       <div 
         className={`
-          fixed top-[72px] left-0 w-full bg-dark/95 backdrop-blur-md border-b border-white/10 
-          transition-all duration-300 overflow-hidden md:hidden
-          ${isMobileMenuOpen ? 'max-h-screen py-4' : 'max-h-0 py-0'}
+          fixed left-0 right-0 bg-dark/95 backdrop-blur-md border-b border-white/10 
+          md:hidden overflow-y-auto
+          transition-[max-height,padding,opacity] duration-200 ease-out
+          ${isMobileMenuOpen ? 'max-h-[80vh] py-4 opacity-100' : 'max-h-0 py-0 opacity-0 pointer-events-none'}
         `}
+        style={{ top: isScrolled ? '56px' : '68px' }}
       >
-        <nav className="container mx-auto px-4 flex flex-col space-y-4">
+        <nav className="container mx-auto px-4 flex flex-col space-y-1">
           <a 
             href="https://chatgpt.com/g/g-677237f84a1481919bea01ed318e6e8c-materiumor-material-valuation-gpt" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="py-2 text-white/80 hover:text-neon-cyan transition-colors"
+            className="py-3 px-2 text-sm text-white/80 hover:text-neon-cyan hover:bg-white/5 rounded-md transition-colors active:bg-white/10"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             BEGIN YOUR MATERIAL VALUATION NOW
@@ -119,7 +129,7 @@ const Header: React.FC = () => {
             href="https://antiqueappraisalgpt.lovable.app/" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="py-2 text-white/80 hover:text-neon-cyan transition-colors"
+            className="py-3 px-2 text-sm text-white/80 hover:text-neon-cyan hover:bg-white/5 rounded-md transition-colors active:bg-white/10"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Also Try Antique & Sports Collectible Appraisal GPT
@@ -128,7 +138,7 @@ const Header: React.FC = () => {
             href="https://docs.google.com/document/d/e/2PACX-1vRCroJHvrdJpxXv6u72FOMtj5ttNzmohJ0UDIF-80WUxY8sxxEn8sJf_ChTtYz5VoVTIbVzF1tJTqun/pub" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="py-2 text-white/80 hover:text-neon-cyan transition-colors"
+            className="py-3 px-2 text-sm text-white/80 hover:text-neon-cyan hover:bg-white/5 rounded-md transition-colors active:bg-white/10"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             OPEN SOURCE PROMPT
@@ -137,23 +147,23 @@ const Header: React.FC = () => {
             href="https://freename.com/result/?search=.worldtrade&type=WEB3_SLD" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="py-2 text-white/80 hover:text-neon-cyan transition-colors"
+            className="py-3 px-2 text-sm text-white/80 hover:text-neon-cyan hover:bg-white/5 rounded-md transition-colors active:bg-white/10"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             SECURE YOUR .WORLDTRADE WEB3 DOMAIN
           </a>
           <a 
             href="#disclaimer" 
-            className="py-2 text-white/80 hover:text-neon-cyan transition-colors"
+            className="py-3 px-2 text-sm text-white/80 hover:text-neon-cyan hover:bg-white/5 rounded-md transition-colors active:bg-white/10"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Disclaimer
           </a>
           <a 
-            href="https://www.aiwebtools.ai" 
+            href="https://aiwebtools.lovable.app/?via=aiwebtools" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="py-2 text-white/80 hover:text-neon-cyan transition-colors"
+            className="py-3 px-2 text-sm text-white/80 hover:text-neon-cyan hover:bg-white/5 rounded-md transition-colors active:bg-white/10"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             More AI Tools
