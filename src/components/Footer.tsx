@@ -141,7 +141,7 @@ const Footer: React.FC = () => {
         
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/60 text-sm mb-4 md:mb-0">
-            © 2025 <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="hover:text-neon-cyan transition-colors">AI WEB TOOLS LLC</a> All rights reserved.
+            © 2025 <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="hover:text-neon-cyan transition-colors">AI WEB TOOLS LLC</a> All rights reserved.
           </p>
           <p className="text-white/60 text-sm">
             "Illuminating material value in a complex world"
