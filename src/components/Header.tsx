@@ -78,7 +78,7 @@ const Header: React.FC = () => {
             Disclaimer
           </a>
           <a 
-            href="https://www.aiwebtools.ai" 
+            href="https://aiwebtools.lovable.app/?via=aiwebtools" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-white/80 hover:text-neon-cyan transition-colors"
