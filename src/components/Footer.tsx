@@ -129,7 +129,7 @@ const Footer: React.FC = () => {
               Explore our full suite of AI-powered tools designed to help you make better decisions.
             </p>
             <a 
-              href="https://www.aiwebtools.ai" 
+              href="https://aiwebtools.lovable.app/?via=aiwebtools" 
               target="_blank" 
               rel="noopener noreferrer"
               className="btn-primary inline-flex items-center justify-center rounded-full"
